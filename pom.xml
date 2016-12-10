@@ -2,8 +2,8 @@
   <modelVersion>4.0.0</modelVersion>
   
   <!-- The Basics -->
-  <groupId>jp.coppermine.tools</groupId>
-  <artifactId>coppermine-tools-javafx-history</artifactId>
+  <groupId>jp.coppermine.poortoys</groupId>
+  <artifactId>javafx-textfield-history</artifactId>
   <version>0.1.0-SNAPSHOT</version>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -14,8 +14,8 @@
   </properties>
   <dependencies>
     <dependency>
-      <groupId>jp.coppermine.tools</groupId>
-      <artifactId>coppermine-tools-history</artifactId>
+      <groupId>jp.coppermine.poortoys</groupId>
+      <artifactId>poortoys-history</artifactId>
       <version>${project.version}</version>
     </dependency>
   </dependencies>
@@ -65,13 +65,13 @@
       <uniqueVersion>false</uniqueVersion>
       <id>coppermine-releases</id>
       <name>coppermine.jp Maven Repository</name>
-      <url>http://dev.haswell.jp:8081/repository/maven-releases/</url>
+      <url>https://repo1.haswell.jp/repository/maven-releases/</url>
     </repository>
     <snapshotRepository>
       <uniqueVersion>true</uniqueVersion>
       <id>coppermine-snapshots</id>
       <name>coppermine.jp Maven Repository</name>
-      <url>http://dev.haswell.jp:8081/repository/maven-snapshots/</url>
+      <url>https://repo1.haswell.jp/repository/maven-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
 </project>
