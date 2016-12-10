@@ -1,4 +1,4 @@
-package jp.coppermine.tools.javafx.history;
+package jp.coppermine.poortoys.javafx.history;
 
 import java.io.IOException;
 import java.io.UncheckedIOException;
@@ -19,7 +19,7 @@ public interface FileHistoryOperation extends HistoryOperation {
      */
     default Path getDirectory() {
         return Paths.get(System.getProperty("user.home"), 
-                System.getProperty("jp.coppermine.tools.javafx.history.dir", ".javafx-history-sample"));
+                System.getProperty("jp.coppermine.poortoys.javafx.history.dir", ".javafx-history-sample"));
     }
     
     /**
@@ -30,7 +30,7 @@ public interface FileHistoryOperation extends HistoryOperation {
      * @return a path of a history file, never null
      */
     default Path getPath() {
-        return getDirectory().resolve(System.getProperty("jp.coppermine.tools.javafx.history.file", "history.txt"));
+        return getDirectory().resolve(System.getProperty("jp.coppermine.poortoys.javafx.history.file", "history.txt"));
     }
     
     @Override

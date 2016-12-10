@@ -1,4 +1,4 @@
-package jp.coppermine.tools.javafx.history;
+package jp.coppermine.poortoys.javafx.history;
 
 import static java.util.stream.Collectors.toList;
 import static javafx.geometry.Orientation.VERTICAL;
@@ -47,7 +47,7 @@ public class HistoryView {
         history.setOnMousePressed(this::onMousePressedAction);
         history.setItems(FXCollections.observableArrayList());
         history.setVisible(false);
-        count = Long.getLong("jp.coppermine.tools.javafx.history.items", 10);
+        count = Long.getLong("jp.coppermine.poortoys.javafx.history.items", 10);
     }
     
     /**
@@ -194,7 +194,7 @@ public class HistoryView {
             history.setItems(
                     FXCollections.observableList(getKeywords().stream()
                             .filter(s -> !s.trim().isEmpty())
-                            .filter(textField.getText()::startsWith)
+                            .filter(s -> s.startsWith(textField.getText()))
                             .limit(count)
                             .collect(toList())));
             history.setPrefHeight((history.getItems().size() * 20.0 + 2.0));

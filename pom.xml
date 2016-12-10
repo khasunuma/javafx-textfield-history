@@ -16,7 +16,7 @@
     <dependency>
       <groupId>jp.coppermine.poortoys</groupId>
       <artifactId>poortoys-history</artifactId>
-      <version>${project.version}</version>
+      <version>0.6.0</version>
     </dependency>
   </dependencies>
   

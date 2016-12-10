@@ -1,4 +1,4 @@
-package jp.coppermine.tools.javafx.history;
+package jp.coppermine.poortoys.javafx.history;
 
 import static java.util.stream.Collectors.toList;
 
@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 import javafx.application.Platform;
-import jp.coppermine.tools.history.Command;
-import jp.coppermine.tools.history.History;
+import jp.coppermine.poortoys.history.Command;
+import jp.coppermine.poortoys.history.History;
 
 public interface HistoryOperation {
 
@@ -45,7 +45,7 @@ public interface HistoryOperation {
      * @return Remaining explained {@link TemporalAmount}, never null
      */
     default TemporalAmount remaining() {
-        return Duration.ofDays(Integer.getInteger("jp.coppermine.tools.javafx.history.remain.days", 30));
+        return Duration.ofDays(Integer.getInteger("jp.coppermine.poortoys.javafx.history.remain.days", 30));
     }
     
     /**
