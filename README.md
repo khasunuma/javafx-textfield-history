@@ -1,2 +1,2 @@
-# coppermine-tools-javafx-history
+# javafx-textfield-history
 Implements of history view attached to javafx.scene.control.TextField
