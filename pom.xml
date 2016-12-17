@@ -14,9 +14,16 @@
   </properties>
   <dependencies>
     <dependency>
-      <groupId>jp.coppermine.poortoys</groupId>
-      <artifactId>poortoys-history</artifactId>
-      <version>0.6.0</version>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junit.version}</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.hamcrest</groupId>
+      <artifactId>hamcrest-library</artifactId>
+      <version>${hamcrest.version}</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
   
